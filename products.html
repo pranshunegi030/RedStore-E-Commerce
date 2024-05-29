@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products - RedStore</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="redStore logo" width="125px" /></a>
+        </div>
+
+        <nav>
+          <ul id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="productDetail.html">Details</a></li>
+            <li><a href="account.html">My Account</a></li>
+          </ul>
+        </nav>
+        <img
+          src="images/cart.png"
+          alt="cart loading...."
+          width="30px"
+          height="30px"
+          onclick="opencart()"
+        />
+        <img
+          src="images/menu.png"
+          alt="loading...."
+          class="menuLogo"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+
+    <div class="smallContainer">
+        <div class="row row2">
+            <h2>All Products</h2>
+            <select>
+                <option >Default Sorting</option>
+                <option >Sort By Price</option>
+                <option >Sort By Popularity</option>
+                <option >Sort By Rating</option>
+                <option >Sort By Sale</option>
+            </select>
+        </div>
+
+      <div class="row">
+        <div class="col4">
+          <a href="productDetail.html"><img src="images/product-1.jpg" alt="loading...." /></a>
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>&#8377; 700</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-2.jpg" alt="loading...." />
+          <h4>Sparx Ultra Black</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>&#8377; 1900</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-3.jpg" alt="loading...." />
+          <h4>Nike Track</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>&#8377; 1600</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-4.jpg" alt="loading...." />
+          <h4>Sports T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>&#8377; 2100</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col4">
+          <img src="images/product-5.jpg" alt="loading...." />
+          <h4>Nike Air</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>&#8377; 17000</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-6.jpg" alt="loading...." />
+          <h4>Sports Shirt Black</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>&#8377; 2800</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-7.jpg" alt="loading...." />
+          <h4>Stockings</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>&#8377; 600</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-8.jpg" alt="loading...." />
+          <h4>Fossil Black</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>&#8377; 7000</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-9.jpg" alt="loading...." />
+          <h4>Roadster</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>&#8377; 3000</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-10.jpg" alt="loading...." />
+          <h4>Sparks Legend</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>&#8377; 7000</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-11.jpg" alt="loading...." />
+          <h4>Spark Fossil Grey</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>&#8377; 1900</p>
+        </div>
+        <div class="col4">
+          <img src="images/product-12.jpg" alt="loading...." />
+          <h4>Nike Black Track</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>&#8377; 5000</p>
+        </div>
+      </div>
+
+      <div class="pageBtn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="appLogo">
+              <img src="images/play-store.png" alt="loading.." />
+              <img src="images/app-store.png" alt="loading.." />
+            </div>
+          </div>
+
+          <div class="footer-col-2">
+            <img src="images/logo-white.png" alt="loading.." />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              Sports Accessible to The Many.
+            </p>
+          </div>
+
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyRight">Copyright 2024 - RedStore</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
